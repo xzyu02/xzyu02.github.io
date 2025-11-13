@@ -1,0 +1,228 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-light-gray);
+    font-family: 'Adobe Garamond Pro', Georgia, serif;
+    line-height: 1.4;
+    color: var(--bg-dark-olive-green);
+    padding: 40px 0;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    position: fixed;
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--bg-light-gray);
+    padding: 20px 15px;
+    border-right: 1px solid rgba(74, 93, 63, 0.15);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    color: var(--bg-dark-olive-green);
+    text-decoration: none;
+    font-size: 0.95em;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+.sidebar a:hover {
+    color: var(--bg-darker-olive);
+    font-weight: 600;
+}
+
+.container {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Introduction Section - Two Column Layout */
+.intro-section {
+    margin-bottom: 40px;
+}
+
+.intro-content {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.photo-column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.profile-photo {
+    width: 200px;
+    flex: 1;
+    object-fit: cover;
+    display: block;
+    min-height: 200px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: var(--bg-dark-olive-green);
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--bg-darker-olive);
+}
+
+.text-column h1 {
+    font-size: 2.5em;
+    margin-top: 0;
+    margin-bottom: 8px;
+    padding-top: 0;
+    color: var(--bg-darker-olive);
+    font-family: 'Adobe Garamond Pro', Georgia, serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.bio {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* School Logos */
+.school-logo {
+    height: 1.2em;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 4px;
+    display: inline-block;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 25px;
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 1.6em;
+    color: var(--bg-darker-olive);
+    margin-bottom: 5px;
+    padding-bottom: 1px;
+    border-bottom: 1px solid var(--bg-dark-olive-green);
+    font-weight: 600;
+}
+
+.content-box {
+    padding: 5px 0;
+}
+
+.content-box p {
+    margin-bottom: 10px;
+}
+
+.content-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* Link Styles */
+a {
+    color: var(--bg-dark-olive-green);
+    text-decoration: underline;
+}
+
+a:hover {
+    color: var(--bg-darker-olive);
+}
+
+/* Change bold to semibold */
+strong {
+    font-weight: 600;
+}
+
+/* Flexbox for date alignment */
+.date-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+/* Compact spacing for specific sections */
+.content-box.compact p {
+    margin-bottom: 1px;
+}
+
+/* Responsive Design */
+@media (max-width: 1100px) {
+    .sidebar {
+        display: none;
+    }
+    
+    .container {
+        max-width: 90%;
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 30px 20px;
+    }
+    
+    .intro-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .photo-placeholder {
+        margin: 0 auto;
+    }
+    
+    .text-column h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .container {
+        padding: 20px;
+    }
+    
+    .photo-placeholder {
+        width: 150px;
+        height: 150px;
+    }
+}

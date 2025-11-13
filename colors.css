@@ -1,0 +1,44 @@
+/* Color Definitions */
+
+/* Currently Used Colors */
+:root {
+    /* Background Colors */
+    --bg-light-olive-green: #C7D7BD;
+    --bg-white-overlay: rgba(255, 255, 255, 0.7);
+    
+    /* Text Colors */
+    --text-primary: #333;
+    --text-heading: #2c3e2c;
+    --text-muted: #5a6d5a;
+    
+    /* Border Colors */
+    --border-heading: #555;
+    --border-green: #9db092;
+    
+    /* Other Colors */
+    --placeholder-gray: #e0e0e0;
+    --placeholder-text: #666;
+}
+
+/* Alternative Color Options */
+:root {
+    /* New Color Palette 1: Light Gray */
+    --bg-light-gray: #EBEBEB;
+    
+    /* New Color Palette 2: Dark Blue */
+    --bg-dark-blue: #2B394B;
+    
+    /* New Color Palette 3: Dark Olive Green */
+    --bg-dark-olive-green: #4A5D3F;
+    --bg-darker-olive: #3A4D2F;
+}
+
+/* Usage Instructions:
+   To change the background color, update the body selector in styles.css:
+   
+   For light gray: background-color: var(--bg-light-gray);
+   For dark blue: background-color: var(--bg-dark-blue);
+   For dark olive: background-color: var(--bg-dark-olive-green);
+   
+   Remember to adjust text colors for dark backgrounds for readability.
+*/

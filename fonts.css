@@ -1,0 +1,117 @@
+/* Font Face Declarations */
+
+/* Adobe Garamond Pro */
+@font-face {
+    font-family: 'Adobe Garamond Pro';
+    src: url('fonts/Adobe Garamond Pro Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Adobe Garamond Pro';
+    src: url('fonts/Adobe Garamond Pro Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Adobe Garamond Pro';
+    src: url('fonts/Adobe Garamond Pro Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Adobe Garamond Pro';
+    src: url('fonts/Adobe Garamond Pro Bold Italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Adobe Garamond Pro';
+    src: url('fonts/Adobe Garamond Pro Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Adobe Garamond Pro';
+    src: url('fonts/Adobe Garamond Pro Semibold Italic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* Sabon LT Pro */
+@font-face {
+    font-family: 'Sabon LT Pro';
+    src: url('fonts/Sabon LT Pro Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sabon LT Pro';
+    src: url('fonts/Sabon LT Pro Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sabon LT Pro';
+    src: url('fonts/Sabon LT Pro Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sabon LT Pro';
+    src: url('fonts/Sabon LT Pro Bold Italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Adriane Text */
+@font-face {
+    font-family: 'Adriane Text';
+    src: url('fonts/Adriane Text Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Adriane Text';
+    src: url('fonts/Adriane Text Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Adriane Text';
+    src: url('fonts/Adriane Text Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Adriane Text';
+    src: url('fonts/Adriane Text Bold Italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* BC Blot */
+@font-face {
+    font-family: 'BC Blot';
+    src: url('fonts/BC Blot Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BC Blot Inline';
+    src: url('fonts/BC Blot Inline.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
