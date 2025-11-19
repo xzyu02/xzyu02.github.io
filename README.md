@@ -13,20 +13,11 @@ Welcome to my website! This repository contains the source code for my personal 
 
 The `flappy-react` folder contains the source code for the Flappy React game. If you make any changes to the game, follow these steps:
 
-1. Navigate to the `flappy-react` directory:
-   ```bash
-   cd flappy-react
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Build the project:
-   ```bash
-   npm run build
-   ```
+```bash
+cd flappy-react
+npm install
+npm run build
+```
 
 This will ensure that your changes are properly compiled and ready for deployment.
 
