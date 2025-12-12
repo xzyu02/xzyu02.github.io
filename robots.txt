@@ -1,0 +1,7 @@
+# Allow everything else
+User-agent: *
+Allow: /
+
+# Block specifically the image bot from seeing your photo
+User-agent: Googlebot-Image
+Disallow: /assets/photos/me.jpg
