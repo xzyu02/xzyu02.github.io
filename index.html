@@ -1,79 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="I'm Xizheng Yu, a student at Brown University.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="I'm Xizheng Yu, a student at Brown University."
+    />
     <title>Xizheng Yu</title>
-    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="fonts.css">
-    <link rel="stylesheet" href="colors.css">
-    <link rel="stylesheet" href="styles.css">
-    <!-- Google tag (gtag.js) -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1ZHMX5E754"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-1ZHMX5E754');
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-1ZHMX5E754");
     </script>
-</head>
-<body>
-    <nav class="sidebar">
-        <ul>
-            <li><a href="index.html" class="active">Overview</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="honors.html">Honors & Awards</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="teaching.html">Teaching</a></li>
-            <li><a href="beyond.html">Misc</a></li>
-        </ul>
-    </nav>
-        
-    <div class="container">
-        <section class="intro-section">
-            <h2>Hi, this is Xizheng Yu</h2>
-            <div class="intro-content">
-                <div class="photo-column">
-                    <img src="assets/photos/me.jpeg" alt="Xizheng Yu" class="profile-photo">
-                    <div class="social-icons">
-                        <a href="mailto:xizheng_yu@brown.edu" title="Email"><i class="fas fa-envelope"></i></a>
-                        <a href="https://scholar.google.com/citations?user=o74_zz0AAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-                        <a href="https://github.com/xzyu02" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="https://linkedin.com/in/xzyu" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://drive.google.com/drive/folders/17mvaTVcThuY9vmbqT7_zsLtoz0CiMGNo?usp=drive_link" target="_blank" title="CV" style="font-size: 1.3em; font-weight: 700; text-decoration: none; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;">CV</a>
-                    </div>
-                </div>
-                <div class="text-column">
-                    <p class="bio">
-                        Hi! My name is Xizheng and I am currently at <a href="https://www.brown.edu/" target="_blank"><img src="assets/icons/brown_logo_text.png" alt="Brown" class="school-logo"></a>pursuing my Sc.M. in Computer Science, working with <a href="https://vivo.brown.edu/display/tserre" target="_blank">Prof. Thomas Serre</a>. 
-                        Previously, I did my undergraduate studies at <a href="https://www.wisc.edu/" target="_blank"><img src="assets/icons/wisc_logo.svg" alt="UW-Madison" class="school-logo"></a>with a triple major in Computer Sciences, Mathematics, and Data Science, where I worked with 
-                        <a href="https://www.biostat.wisc.edu/~vsingh/" target="_blank">Prof. Vikas Singh</a> and <a href="https://psych.wisc.edu/staff/rogers-timothy-t/" target="_blank">Prof. Timothy T. Rogers</a>. 
-                        <br>My research interests lie at the intersection of computational cognitive science, 
-                        computational linguistics, model evaluation, and brain-inspired models. Specifically, I'm interested in but not limited to <strong>(1) 🔍 evaluating and understanding the internal representations of vision and language models through the rigorous lens of cognitive science and neuroscience; (2) 🧠 building novel, biologically-inspired architectures that learn and generalize in more robust, human-like ways. </strong>
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>News</h2>
-            <div class="content-box compact">
-                <p><strong>May 2026</strong> - I graduated from Brown.</p>
-                <p><strong>Apr 2026</strong> - I accepted my PhD offer at Harvard.</p>
-            </div>
-        </section>
-    </div>
-
-    <footer class="footer">
-        <p>Designed by Claude Sonnet 4.5 and Xizheng © 2025</p>
-    </footer> 
-
-    <div id="visitor-map" style="display: none;">
-        <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=n&d=IcWN24BKXLBDZwpNrSEUbxixaSVE6vO1BgU8GhRPb5s&co=ebebeb&cmo=c7d7bd&cmn=c7d7bd"></script>
-    </div>
-
-</body>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

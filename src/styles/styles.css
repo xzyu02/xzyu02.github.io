@@ -10,7 +10,11 @@ body {
     font-family: 'Adobe Garamond Pro', Georgia, serif;
     line-height: 1.4;
     color: var(--bg-dark-olive-green);
-    padding: 40px 0;
+    padding: 40px 0 96px;
+}
+
+#root {
+    min-height: 100vh;
 }
 
 /* Sidebar Navigation */
@@ -108,6 +112,12 @@ body {
     transition: color 0.3s ease;
 }
 
+.social-text-link {
+    font-size: 1.3em !important;
+    font-weight: 700;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
 .social-icons a:hover {
     color: var(--bg-darker-olive);
 }
@@ -169,6 +179,10 @@ h2 {
     margin-bottom: 0;
 }
 
+.spaced-paragraph {
+    margin-top: 15px;
+}
+
 /* Link Styles */
 a {
     color: var(--bg-dark-olive-green);
@@ -191,6 +205,10 @@ strong {
     align-items: baseline;
 }
 
+.indented-row {
+    margin-left: 20px;
+}
+
 /* Compact spacing for specific sections */
 .content-box.compact p {
     margin-bottom: 1px;
@@ -200,14 +218,15 @@ strong {
 .footer {
     text-align: center;
     padding: 10px 0 0 0;
-    margin-top: 40px;
-    margin-bottom: -25px;
     color: var(--bg-dark-olive-green);
     font-size: 0.85em;
     border-top: 1px solid rgba(74, 93, 63, 0.2);
     width: min(640px, calc(100vw - 380px));
-    margin-left: auto;
-    margin-right: auto;
+    position: fixed;
+    left: 50%;
+    bottom: 18px;
+    transform: translateX(-50%);
+    background-color: var(--bg-light-gray);
 }
 
 .footer p {
