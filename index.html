@@ -21,24 +21,23 @@
     </script>
 </head>
 <body>
-    <!-- Sidebar Navigation -->
     <nav class="sidebar">
         <ul>
-            <li><a href="#intro">Overview</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#honors">Honors & Awards</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#teaching">Teaching</a></li>
-            <li><a href="#beyond">Beyond Research</a></li>
+            <li><a href="index.html" class="active">Overview</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="honors.html">Honors & Awards</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+            <li><a href="beyond.html">Misc</a></li>
         </ul>
     </nav>
         
     <div class="container">
-        <!-- Introduction Section -->
-        <section id="intro" class="intro-section">
+        <section class="intro-section">
+            <h2>Hi, this is Xizheng Yu</h2>
             <div class="intro-content">
                 <div class="photo-column">
-                    <img src="assets/photos/me.jpg" alt="Xizheng Yu" class="profile-photo">
+                    <img src="assets/photos/me.jpeg" alt="Xizheng Yu" class="profile-photo">
                     <div class="social-icons">
                         <a href="mailto:xizheng_yu@brown.edu" title="Email"><i class="fas fa-envelope"></i></a>
                         <a href="https://scholar.google.com/citations?user=o74_zz0AAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
@@ -48,7 +47,6 @@
                     </div>
                 </div>
                 <div class="text-column">
-                    <h1>Xizheng Yu</h1>
                     <p class="bio">
                         Hi! My name is Xizheng and I am currently at <a href="https://www.brown.edu/" target="_blank"><img src="assets/icons/brown_logo_text.png" alt="Brown" class="school-logo"></a>pursuing my Sc.M. in Computer Science, working with <a href="https://vivo.brown.edu/display/tserre" target="_blank">Prof. Thomas Serre</a>. 
                         Previously, I did my undergraduate studies at <a href="https://www.wisc.edu/" target="_blank"><img src="assets/icons/wisc_logo.svg" alt="UW-Madison" class="school-logo"></a>with a triple major in Computer Sciences, Mathematics, and Data Science, where I worked with 
@@ -60,82 +58,15 @@
             </div>
         </section>
 
-        <!-- Publications Section -->
-        <section id="publications">
-            <h2>Publications & Preprints</h2>
-            <div class="content-box">
-                <p>[1] I. Felipe*, <strong>X. Yu*</strong>, J. Mulinken, N. Pant, T. Serre<br>
-                <strong>HMAX Strikes Back: Biologically-Inspired Architectures For Scale Invariance</strong><br>
-                <em>Under Review</em></p>
-                
-                <p style="margin-top: 15px;">[2] <strong>X. Yu</strong>, J. Torok, S. Pandya, S. Pal, V. Singh, A. Raj<br>
-                <strong>Brain-wide interpolation and conditioning of gene expression in the human brain using Implicit Neural Representations</strong><br>
-                <em><a href="https://arxiv.org/abs/2506.11158" target="_blank">Preprint</a></em></p>
-                
-                <p style="margin-top: 15px;">[3] S. Suresh, K. Mukherjee, T. Giallanza, <strong>X. Yu</strong>, M. Patil, J. Cohen, T. T. Rogers<br>
-                <strong>AI-enhanced semantic feature norms for 786 concepts</strong><br>
-                <em>Cogsci 2025 & <a href="https://iclr.cc/virtual/2025/34162" target="_blank">ICLR 2025 Bi-Align</a></em><br>
-                🏆 <strong>Best Paper Award</strong></p>
-                
-                <p style="margin-top: 15px;">[4] K. Mukherjee, S. Suresh, <strong>X. Yu</strong>, G. Lupyan<br>
-                <strong>The role of shared labels and experiences in representational alignment</strong><br>
-                <em><a href="https://iclr.cc/virtual/2024/22553" target="_blank">ICLR 2024 Re-Align</a></em></p>
-                
-                <p style="margin-top: 15px;">[5] S. Suresh, K. Mukherjee, <strong>X. Yu</strong>, W. Huang, L. Padua, T. T. Rogers<br>
-                <strong>Conceptual structure coheres in human cognition but not in large language model</strong><br>
-                <em><a href="https://aclanthology.org/2023.emnlp-main.47/" target="_blank">EMNLP 2023</a></em></p>
-            </div>
-        </section>
-        
-        <!-- Honors & Awards Section -->
-        <section id="honors">
-            <h2>Honors & Awards</h2>
+        <section>
+            <h2>News</h2>
             <div class="content-box compact">
-                <p><strong>Best Paper Award</strong> @ Bidirectional Human AI Alignment Workshop ICLR 2025 and CHI 2025</p>
-                <p><strong>Computational Modeling Prize for Applied Cognition</strong> @ Cogsci 2025</p>
-                <p><strong>Distinction in the Major</strong> @ UW-Madison Computer Science</p>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services">
-            <h2>Services</h2>
-            <div class="content-box compact">
-                <p>Reviewer, <em>CogSci 2025</em></p>
-                <p>Reviewer, <em>ICLR 2025 Workshop on Representational Alignment (Re-Align)</em></p>
-            </div>
-        </section>
-        
-        <!-- Teaching Experience Section -->
-        <section id="teaching">
-            <h2>Teaching Experience</h2>
-            <div class="content-box compact">
-                <p><strong>At Brown</strong></p>
-                <p style="margin-left: 20px;" class="date-line"><span>CPSY 1291: Computational Methods for Mind, Brain and Behavior</span><span>Fall 25</span></p>
-                
-                <p><strong>At Wisc</strong></p>
-                <p style="margin-left: 20px;" class="date-line"><span>CS 320: Data Science Programming II</span><span>Spring 23</span></p>
-                <p style="margin-left: 20px;" class="date-line"><span>CS 400: Algorithms and Data Structures in Java</span><span>Fall 22</span></p>
-                <p style="margin-left: 20px;" class="date-line"><span>Math 234: Multi-variable Calculus</span><span>Fall 22</span></p>
-            </div>
-        </section>
-        
-        <!-- Misc Section -->
-        <section id="beyond">
-            <h2>Beyond Research</h2>
-            <div class="content-box compact">
-                <p>In my spare time, I do a lot of stuff.</p>
-                <p>🎾 I enjoy playing (a lot of) tennis, and I play a blue Yonex Ezone 98 racquet.</p>
-                <p>🍳 I love cooking Chinese food, I also enjoy experimenting with new recipes and cuisines.</p>
-                <p>🏎️ I'm a big Formula 1 fan.</p>
-                <p>🕹️ I make this cute game with Gemini 3. Check out my <a href="flappy-react/dist/index.html">Flappy Bird</a>!</p>
+                <p><strong>May 2026</strong> - I graduated from Brown.</p>
+                <p><strong>Apr 2026</strong> - I accepted my PhD offer at Harvard.</p>
             </div>
         </section>
     </div>
-    
-    <!-- Visitor Map -->
 
-    <!-- Footer -->
     <footer class="footer">
         <p>Designed by Claude Sonnet 4.5 and Xizheng © 2025</p>
     </footer> 
