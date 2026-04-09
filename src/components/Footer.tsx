@@ -1,7 +1,11 @@
-export default function Footer() {
+type FooterProps = {
+  text: string;
+};
+
+export default function Footer({ text }: FooterProps) {
   return (
     <footer className="footer">
-      <p>Designed by myself and vibe coded © 2026</p>
+      <p>{text}</p>
     </footer>
   );
 }

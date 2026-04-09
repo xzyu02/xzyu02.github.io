@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
+import profilePhoto from "./assets/photos/me.jpeg";
 import Layout from "./components/Layout";
-import { pageDescriptions, pages, type PageKey } from "./content/siteData";
+import { pageDescriptions, pages, siteContent, type PageKey } from "./content/siteContent";
 
 const defaultPage: PageKey = "overview";
 
@@ -43,6 +44,150 @@ function loadVisitorMap() {
   document.body.appendChild(mapContainer);
 }
 
+function HtmlParagraph({
+  html,
+  className,
+}: {
+  html: string;
+  className?: string;
+}) {
+  return <p className={className} dangerouslySetInnerHTML={{ __html: html }} />;
+}
+
+function OverviewContent() {
+  return (
+    <>
+      <section className="intro-section">
+        <div className="intro-content">
+          <div className="photo-column">
+            <img src={profilePhoto} alt="Xizheng Yu" className="profile-photo" />
+            <div className="social-icons">
+              {siteContent.overview.socialLinks.map((link) => (
+                <a
+                  key={link.title}
+                  href={link.href}
+                  title={link.title}
+                  target={link.newTab ? "_blank" : undefined}
+                  rel={link.newTab ? "noreferrer" : undefined}
+                  className={link.label ? "social-text-link" : undefined}
+                >
+                  {link.iconClass ? <i className={link.iconClass} /> : link.label}
+                </a>
+              ))}
+            </div>
+          </div>
+          <div className="text-column">
+            <p
+              className="bio"
+              dangerouslySetInnerHTML={{ __html: siteContent.overview.bioHtml }}
+            />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>News</h2>
+        <div className="content-box compact">
+          {siteContent.overview.news.map((item) => (
+            <p key={`${item.date}-${item.text}`}>
+              <strong>{item.date}</strong> - {item.text}
+            </p>
+          ))}
+        </div>
+      </section>
+    </>
+  );
+}
+
+function PublicationsContent() {
+  return (
+    <div className="content-box">
+      {siteContent.publications.items.map((item, index) => (
+        <div key={item.title}>
+          <HtmlParagraph
+            html={`[${index + 1}] ${item.authorsHtml}<br /><strong>${item.title}</strong><br />${item.venueHtml}${item.award ? `<br /><strong>${item.award}</strong>` : ""}`}
+            className={index === 0 ? undefined : "spaced-paragraph"}
+          />
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function HonorsContent() {
+  return (
+    <div className="content-box compact">
+      {siteContent.honors.items.map((item) => (
+        <HtmlParagraph key={item} html={item} />
+      ))}
+    </div>
+  );
+}
+
+function ServicesContent() {
+  return (
+    <div className="content-box compact">
+      {siteContent.services.items.map((item) => (
+        <HtmlParagraph key={item} html={item} />
+      ))}
+    </div>
+  );
+}
+
+function TeachingContent() {
+  return (
+    <div className="content-box compact">
+      {siteContent.teaching.groups.map((group) => (
+        <div key={group.label}>
+          <p>
+            <strong>{group.label}</strong>
+          </p>
+          {group.items.map((item) => (
+            <p key={`${group.label}-${item.course}`} className="date-line indented-row">
+              <span>{item.course}</span>
+              <span>{item.term}</span>
+            </p>
+          ))}
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function MiscContent() {
+  return (
+    <div className="content-box compact">
+      {siteContent.misc.items.map((item) => (
+        <HtmlParagraph key={item} html={item} />
+      ))}
+    </div>
+  );
+}
+
+function PageContent({ pageKey }: { pageKey: PageKey }) {
+  if (pageKey === "overview") {
+    return <OverviewContent />;
+  }
+
+  if (pageKey === "publications") {
+    return <PublicationsContent />;
+  }
+
+  if (pageKey === "honors") {
+    return <HonorsContent />;
+  }
+
+  if (pageKey === "services") {
+    return <ServicesContent />;
+  }
+
+  if (pageKey === "teaching") {
+    return <TeachingContent />;
+  }
+
+  return <MiscContent />;
+}
+
 export default function App() {
   const [currentPage, setCurrentPage] = useState<PageKey>(() =>
     normalizeRoute(window.location.hash),
@@ -77,10 +222,14 @@ export default function App() {
   const page = useMemo(() => pages[currentPage], [currentPage]);
 
   return (
-    <Layout currentPage={currentPage} routeHref={routeHref}>
+    <Layout
+      currentPage={currentPage}
+      routeHref={routeHref}
+      footerText={siteContent.footerText}
+    >
       <section className="page-section">
         <h2>{page.heading}</h2>
-        {page.content}
+        <PageContent pageKey={currentPage} />
       </section>
     </Layout>
   );

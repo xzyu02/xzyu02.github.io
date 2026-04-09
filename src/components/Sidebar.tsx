@@ -1,4 +1,4 @@
-import { navItems, type PageKey } from "../content/siteData";
+import { navItems, type PageKey } from "../content/siteContent";
 
 type SidebarProps = {
   currentPage: PageKey;
