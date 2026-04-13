@@ -227,6 +227,8 @@ export default function App() {
       routeHref={routeHref}
       footerText={siteContent.footerText}
     >
+      <div className="page-grid-corner" aria-hidden="true" />
+      <div className="page-grid-right-line" aria-hidden="true" />
       <section className="page-section">
         <h2>{page.heading}</h2>
         <PageContent pageKey={currentPage} />
