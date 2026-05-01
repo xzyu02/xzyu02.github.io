@@ -42,7 +42,7 @@ pages:
 
 overview:
   bioHtml: |
-    Hi! I'm an incoming Computer Science PhD student at Harvard University, advised by <a href="https://sites.google.com/site/sueyeonchung/." target="_blank" rel="noreferrer">Prof. Sueyeon Chung</a> in the <a href="https://www.sychunglab.org/" target="_blank" rel="noreferrer">Chung Lab</a>. I'm interested in neuroai and representational geometry, specifically, understanding model representations through mechanistic intepretability, and building brain-inspired models that learn and generalize in more human-like ways.
+    Hi! I'm an incoming CS PhD student in the School of Engineering and Applied Sciences at Harvard University, advised by <a href="https://sites.google.com/site/sueyeonchung/." target="_blank" rel="noreferrer">Prof. Sueyeon Chung</a> at <a href="https://www.sychunglab.org/" target="_blank" rel="noreferrer">Geometric NeuroAI Lab</a>. I'm interested in computational neuroscience and representational geometry, specifically, building brain-inspired models that learn and generalize in more human-like ways and understanding model representations through mechanistic intepretability.
     <br /><br />
     I am currently at <a href="https://www.brown.edu/" target="_blank" rel="noreferrer"><img src="{{brownLogoText}}" alt="Brown" class="school-logo" /></a>pursuing my Sc.M. in Computer Science, working with <a href="https://vivo.brown.edu/display/tserre" target="_blank" rel="noreferrer">Prof. Thomas Serre</a>.
     Previously, I did my undergraduate studies at <a href="https://www.wisc.edu/" target="_blank" rel="noreferrer"><img src="{{wiscLogo}}" alt="UW-Madison" class="school-logo" /></a>with a triple major in Computer Sciences, Mathematics, and Data Science, where I worked with <a href="https://www.biostat.wisc.edu/~vsingh/" target="_blank" rel="noreferrer">Prof. Vikas Singh</a> and <a href="https://psych.wisc.edu/staff/rogers-timothy-t/" target="_blank" rel="noreferrer">Prof. Timothy T. Rogers</a>.
@@ -62,15 +62,9 @@ overview:
       title: LinkedIn
       iconClass: "fab fa-linkedin"
       newTab: true
-    - href: "https://drive.google.com/drive/folders/17mvaTVcThuY9vmbqT7_zsLtoz0CiMGNo?usp=drive_link"
-      title: CV
-      label: CV
-      newTab: true
   news:
     - date: "May 2026"
       text: "I'm graduating from Brown."
-    - date: "Apr 2026"
-      text: "I accepted my PhD offer at Harvard."
 
 publications:
   items:
