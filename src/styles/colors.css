@@ -1,0 +1,13 @@
+:root {
+    --bg-page: #f4f6f3;
+    --bg-panel: #fbfcfa;
+    --bg-band: #d5d0c6;
+    --bg-accent: #b9c7b0;
+    --ink-main: #171714;
+    --ink-soft: #44423c;
+    --ink-muted: #767166;
+    --line-soft: rgba(23, 23, 20, 0.14);
+    --line-strong: rgba(23, 23, 20, 0.35);
+    --link: #30483a;
+    --link-hover: #18251d;
+}

@@ -1,0 +1,120 @@
+footerText: "Designed by myself and vibe coded © 2026"
+
+navigation:
+  - key: overview
+    label: Overview
+  - key: publications
+    label: Publications
+  - key: honors
+    label: Honors & Awards
+  - key: services
+    label: Services
+  - key: teaching
+    label: Teaching
+  - key: misc
+    label: Misc
+
+pages:
+  overview:
+    title: Xizheng Yu
+    description: "I'm Xizheng Yu, a student at Brown University."
+    heading: "Hi, this is Xizheng Yu"
+  publications:
+    title: "Publications | Xizheng Yu"
+    description: "Publications and preprints by Xizheng Yu."
+    heading: "Publications & Preprints"
+  honors:
+    title: "Honors & Awards | Xizheng Yu"
+    description: "Honors and awards received by Xizheng Yu."
+    heading: "Honors & Awards"
+  services:
+    title: "Services | Xizheng Yu"
+    description: "Professional service by Xizheng Yu."
+    heading: Services
+  teaching:
+    title: "Teaching | Xizheng Yu"
+    description: "Teaching experience of Xizheng Yu."
+    heading: "Teaching Experience"
+  misc:
+    title: "Misc | Xizheng Yu"
+    description: "Miscellaneous interests and hobbies of Xizheng Yu."
+    heading: Misc
+
+overview:
+  bioHtml: |
+    Hi! I'm an incoming CS PhD student in the School of Engineering and Applied Sciences at Harvard University, advised by <a href="https://sites.google.com/site/sueyeonchung/." target="_blank" rel="noreferrer">Prof. Sueyeon Chung</a> at <a href="https://www.sychunglab.org/" target="_blank" rel="noreferrer">Geometric NeuroAI Lab</a>. I'm interested in computational neuroscience and representational geometry, specifically, building brain-inspired models that learn and generalize in more human-like ways and understanding model representations through mechanistic intepretability.
+    <br /><br />
+    I am currently at <a href="https://www.brown.edu/" target="_blank" rel="noreferrer"><img src="{{brownLogoText}}" alt="Brown" class="school-logo" /></a>pursuing my Sc.M. in Computer Science, working with <a href="https://vivo.brown.edu/display/tserre" target="_blank" rel="noreferrer">Prof. Thomas Serre</a>.
+    Previously, I did my undergraduate studies at <a href="https://www.wisc.edu/" target="_blank" rel="noreferrer"><img src="{{wiscLogo}}" alt="UW-Madison" class="school-logo" /></a>with a triple major in Computer Sciences, Mathematics, and Data Science, where I worked with <a href="https://www.biostat.wisc.edu/~vsingh/" target="_blank" rel="noreferrer">Prof. Vikas Singh</a> and <a href="https://psych.wisc.edu/staff/rogers-timothy-t/" target="_blank" rel="noreferrer">Prof. Timothy T. Rogers</a>.
+  socialLinks:
+    - href: "mailto:xizheng_yu@brown.edu"
+      title: Email
+      iconClass: "fas fa-envelope"
+    - href: "https://scholar.google.com/citations?user=o74_zz0AAAAJ&hl=en"
+      title: Google Scholar
+      iconClass: "fas fa-graduation-cap"
+      newTab: true
+    - href: "https://github.com/xzyu02"
+      title: GitHub
+      iconClass: "fab fa-github"
+      newTab: true
+    - href: "https://linkedin.com/in/xzyu"
+      title: LinkedIn
+      iconClass: "fab fa-linkedin"
+      newTab: true
+  news:
+    - date: "May 2026"
+      text: "I'm graduating from Brown."
+
+publications:
+  items:
+    - authorsHtml: "I. Felipe*, <strong>X. Yu*</strong>, J. Mulinken, N. Pant, T. Serre"
+      title: "HMAX Strikes Back: Biologically-Inspired Architectures For Scale Invariance"
+      venueHtml: "<em>Under Review</em>"
+    - authorsHtml: "<strong>X. Yu</strong>, J. Torok, S. Pandya, S. Pal, V. Singh, A. Raj"
+      title: "Brain-wide interpolation and conditioning of gene expression in the human brain using Implicit Neural Representations"
+      venueHtml: '<em><a href="https://arxiv.org/abs/2506.11158" target="_blank" rel="noreferrer">Preprint</a></em>'
+    - authorsHtml: "S. Suresh, K. Mukherjee, T. Giallanza, <strong>X. Yu</strong>, M. Patil, J. Cohen, T. T. Rogers"
+      title: "AI-enhanced semantic feature norms for 786 concepts"
+      venueHtml: '<em>Cogsci 2025 &amp; <a href="https://iclr.cc/virtual/2025/34162" target="_blank" rel="noreferrer">ICLR 2025 Bi-Align</a></em>'
+      award: "Best Paper Award"
+    - authorsHtml: "K. Mukherjee, S. Suresh, <strong>X. Yu</strong>, G. Lupyan"
+      title: "The role of shared labels and experiences in representational alignment"
+      venueHtml: '<em><a href="https://iclr.cc/virtual/2024/22553" target="_blank" rel="noreferrer">ICLR 2024 Re-Align</a></em>'
+    - authorsHtml: "S. Suresh, K. Mukherjee, <strong>X. Yu</strong>, W. Huang, L. Padua, T. T. Rogers"
+      title: "Conceptual structure coheres in human cognition but not in large language model"
+      venueHtml: '<em><a href="https://aclanthology.org/2023.emnlp-main.47/" target="_blank" rel="noreferrer">EMNLP 2023</a></em>'
+
+honors:
+  items:
+    - "<strong>Best Paper Award</strong> @ Bidirectional Human AI Alignment Workshop ICLR 2025 and CHI 2025"
+    - "<strong>Computational Modeling Prize for Applied Cognition</strong> @ Cogsci 2025"
+    - "<strong>Distinction in the Major</strong> @ UW-Madison Computer Science"
+
+services:
+  items:
+    - "Reviewer, <em>CogSci 2025, 2026</em>"
+    - "Reviewer, <em>ICLR 2025 Workshop on Representational Alignment (Re-Align)</em>"
+
+teaching:
+  groups:
+    - label: At Brown
+      items:
+        - course: "CPSY 1291: Computational Methods for Mind, Brain and Behavior"
+          term: "Fall 25"
+    - label: At Wisc
+      items:
+        - course: "CS 320: Data Science Programming II"
+          term: "Spring 23"
+        - course: "CS 400: Algorithms and Data Structures in Java"
+          term: "Fall 22"
+        - course: "Math 234: Multi-variable Calculus"
+          term: "Fall 22"
+
+misc:
+  items:
+    - "In my spare time, I do a lot of stuff."
+    - "🎾 I enjoy playing (a lot of) tennis, and I play with a blue Yonex Ezone 98 racquet."
+    - "🍳 I love cooking Chinese food, and I also enjoy experimenting with new recipes and cuisines."
+    - "🏎️ I'm a big Formula 1 fan."
+    - '🕹️ I made this cute game with Gemini 3. Check out my <a href="./flappy-react/dist/index.html">Flappy Bird</a>!'
