@@ -121,19 +121,9 @@ body::after {
     left: max(24px, calc(50vw - 700px));
     top: 44px;
     width: 188px;
-    padding: 0 22px 0 0;
+    padding: 34px 22px 0 0;
     height: calc(100vh - 74px);
     border-right: 1px solid var(--line-soft);
-}
-
-.sidebar::before {
-    content: "";
-    display: block;
-    width: var(--corner-notch-width);
-    height: var(--corner-notch-height);
-    background: transparent;
-    border: 1px solid var(--line-soft);
-    margin-bottom: 24px;
 }
 
 .sidebar ul {
@@ -378,6 +368,7 @@ strong {
         margin: 0 auto 22px;
         padding: 0 12px;
         min-height: auto;
+        height: auto;
         border-right: 0;
         border-bottom: 1px solid var(--line-soft);
         padding-bottom: 14px;
@@ -409,7 +400,7 @@ strong {
 
 @media (max-width: 768px) {
     body {
-        padding: 18px 0 84px;
+        padding: 18px 0 24px;
     }
 
     .page-section {
@@ -428,6 +419,13 @@ strong {
     .bio {
         font-size: 1rem;
         line-height: 1.66;
+    }
+
+    .footer {
+        position: static;
+        border-top: 1px solid var(--line-soft);
+        margin: 16px auto 0;
+        padding: 10px 12px 12px;
     }
 }
 
