@@ -12,6 +12,11 @@ function normalizeRoute(hash: string): PageKey {
     return defaultPage;
   }
 
+  // Teaching was merged into Services; keep old links working.
+  if (route === "teaching") {
+    return "services";
+  }
+
   if (route in pages) {
     return route as PageKey;
   }
@@ -137,16 +142,12 @@ function HonorsContent() {
 function ServicesContent() {
   return (
     <div className="content-box compact">
+      <p>
+        <strong>Reviewing</strong>
+      </p>
       {siteContent.services.items.map((item) => (
-        <HtmlParagraph key={item} html={item} />
+        <HtmlParagraph key={item} html={item} className="indented-row" />
       ))}
-    </div>
-  );
-}
-
-function TeachingContent() {
-  return (
-    <div className="content-box compact">
       {siteContent.teaching.groups.map((group) => (
         <div key={group.label}>
           <p>
@@ -189,10 +190,6 @@ function PageContent({ pageKey }: { pageKey: PageKey }) {
 
   if (pageKey === "services") {
     return <ServicesContent />;
-  }
-
-  if (pageKey === "teaching") {
-    return <TeachingContent />;
   }
 
   return <MiscContent />;

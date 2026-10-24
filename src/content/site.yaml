@@ -9,8 +9,6 @@ navigation:
     label: Honors & Awards
   - key: services
     label: Services
-  - key: teaching
-    label: Teaching
   - key: misc
     label: Misc
 
@@ -29,12 +27,8 @@ pages:
     heading: "Honors & Awards"
   services:
     title: "Services | Xizheng Yu"
-    description: "Professional service by Xizheng Yu."
+    description: "Professional service and teaching experience of Xizheng Yu."
     heading: Services
-  teaching:
-    title: "Teaching | Xizheng Yu"
-    description: "Teaching experience of Xizheng Yu."
-    heading: "Teaching Experience"
   misc:
     title: "Misc | Xizheng Yu"
     description: "Miscellaneous interests and hobbies of Xizheng Yu."
@@ -102,11 +96,11 @@ services:
 
 teaching:
   groups:
-    - label: At Brown
+    - label: Teaching at Brown
       items:
         - course: "CPSY 1291: Computational Methods for Mind, Brain and Behavior"
           term: "Fall 25"
-    - label: At Wisc
+    - label: Teaching at Wisc
       items:
         - course: "CS 320: Data Science Programming II"
           term: "Spring 23"

@@ -8,7 +8,6 @@ export type PageKey =
   | "publications"
   | "honors"
   | "services"
-  | "teaching"
   | "misc";
 
 export type NavItem = {
