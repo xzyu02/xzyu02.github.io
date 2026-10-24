@@ -23,10 +23,19 @@ function routeHref(key: PageKey) {
   return key === defaultPage ? "./" : `./#/${key}`;
 }
 
-function loadVisitorMap() {
-  const existingScript = document.getElementById("clustrmaps");
+const visitorTrackers = [
+  {
+    id: "clustrmaps",
+    src: "//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=n&d=IcWN24BKXLBDZwpNrSEUbxixaSVE6vO1BgU8GhRPb5s&co=ebebeb&cmo=c7d7bd&cmn=c7d7bd",
+  },
+  {
+    id: "mapmyvisitors",
+    src: "https://mapmyvisitors.com/map.js?d=9q2st1KHGt0eoqp8St4dj1J2mi31yavQuttXp0m9HnE&cl=ffffff&w=a",
+  },
+];
 
-  if (existingScript) {
+function loadVisitorMap() {
+  if (document.getElementById("visitor-map")) {
     return;
   }
 
@@ -34,13 +43,14 @@ function loadVisitorMap() {
   mapContainer.id = "visitor-map";
   mapContainer.style.display = "none";
 
-  const script = document.createElement("script");
-  script.id = "clustrmaps";
-  script.type = "text/javascript";
-  script.src =
-    "//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=300&t=n&d=IcWN24BKXLBDZwpNrSEUbxixaSVE6vO1BgU8GhRPb5s&co=ebebeb&cmo=c7d7bd&cmn=c7d7bd";
+  for (const tracker of visitorTrackers) {
+    const script = document.createElement("script");
+    script.id = tracker.id;
+    script.type = "text/javascript";
+    script.src = tracker.src;
+    mapContainer.appendChild(script);
+  }
 
-  mapContainer.appendChild(script);
   document.body.appendChild(mapContainer);
 }
 
