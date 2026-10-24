@@ -91,16 +91,16 @@ honors:
 
 services:
   items:
-    - "Reviewer, <em>CogSci 2025, 2026</em>"
-    - "Reviewer, <em>ICLR 2025 Workshop on Representational Alignment (Re-Align)</em>"
+    - "Conferences: <em>CogSci 2025, 2026</em>"
+    - "Workshops: <em>ICLR 2025 Workshop on Representational Alignment (Re-Align)</em>"
 
 teaching:
   groups:
-    - label: Teaching at Brown
+    - label: At Brown
       items:
         - course: "CPSY 1291: Computational Methods for Mind, Brain and Behavior"
           term: "Fall 25"
-    - label: Teaching at Wisc
+    - label: At Wisc
       items:
         - course: "CS 320: Data Science Programming II"
           term: "Spring 23"

@@ -148,13 +148,19 @@ function ServicesContent() {
       {siteContent.services.items.map((item) => (
         <HtmlParagraph key={item} html={item} className="indented-row" />
       ))}
+      <p>
+        <strong>Teaching</strong>
+      </p>
       {siteContent.teaching.groups.map((group) => (
         <div key={group.label}>
-          <p>
-            <strong>{group.label}</strong>
+          <p className="indented-row">
+            <em>{group.label}</em>
           </p>
           {group.items.map((item) => (
-            <p key={`${group.label}-${item.course}`} className="date-line indented-row">
+            <p
+              key={`${group.label}-${item.course}`}
+              className="date-line indented-row nested-row"
+            >
               <span>{item.course}</span>
               <span>{item.term}</span>
             </p>

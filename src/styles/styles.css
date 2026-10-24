@@ -304,6 +304,10 @@ strong {
     color: var(--ink-soft);
 }
 
+.nested-row {
+    margin-left: 36px;
+}
+
 .content-box.compact p {
     margin-bottom: 6px;
 }
