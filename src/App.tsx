@@ -12,11 +12,6 @@ function normalizeRoute(hash: string): PageKey {
     return defaultPage;
   }
 
-  // Teaching was merged into Services; keep old links working.
-  if (route === "teaching") {
-    return "services";
-  }
-
   if (route in pages) {
     return route as PageKey;
   }
