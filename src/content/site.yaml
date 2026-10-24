@@ -63,8 +63,12 @@ overview:
       iconClass: "fab fa-linkedin"
       newTab: true
   news:
+    - date: "Oct 2026"
+      text: "My paper was accepted at NeurIPS 2026!"
+    - date: "Sep 2026"
+      text: "I started my PhD at Harvard SEAS."
     - date: "May 2026"
-      text: "I'm graduating from Brown."
+      text: "I graduated from Brown."
 
 publications:
   items:
